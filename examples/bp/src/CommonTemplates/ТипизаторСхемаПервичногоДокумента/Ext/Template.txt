@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "document_kind": {
+      "type": "string",
+      "enum": ["upd", "torg12", "act", "invoice", "invoice_factura", "other"],
+      "description": "Вид документа: upd — универсальный передаточный документ (УПД); torg12 — товарная накладная ТОРГ-12 или другая накладная на товары; act — акт выполненных работ или оказанных услуг; invoice — счёт на оплату; invoice_factura — отдельный счёт-фактура; other — что-то другое"
+    },
+    "upd_status": {
+      "type": "string",
+      "enum": ["1", "2"],
+      "description": "Только для УПД: статус из левого верхнего угла документа. 1 — УПД со счётом-фактурой, 2 — только передаточный документ"
+    },
+    "document_number": { "type": "string", "description": "Номер документа" },
+    "document_date": { "type": "string", "format": "date", "description": "Дата документа" },
+    "invoice_factura_number": {
+      "type": "string",
+      "description": "Номер счёта-фактуры, если документ является счётом-фактурой или УПД со статусом 1"
+    },
+    "invoice_factura_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Дата счёта-фактуры"
+    },
+    "seller_name": { "type": "string", "description": "Продавец, исполнитель или поставщик: наименование" },
+    "seller_inn": { "type": "string", "x-typizer-check": "inn", "description": "ИНН продавца" },
+    "seller_kpp": { "type": "string", "x-typizer-check": "kpp", "description": "КПП продавца" },
+    "seller_address": { "type": "string", "description": "Адрес продавца" },
+    "seller_bik": { "type": "string", "x-typizer-check": "bik", "description": "БИК банка продавца" },
+    "seller_account": {
+      "type": "string",
+      "x-typizer-check": "account",
+      "description": "Расчётный счёт продавца"
+    },
+    "buyer_name": { "type": "string", "description": "Покупатель или заказчик: наименование" },
+    "buyer_inn": { "type": "string", "x-typizer-check": "inn", "description": "ИНН покупателя" },
+    "buyer_kpp": { "type": "string", "x-typizer-check": "kpp", "description": "КПП покупателя" },
+    "contract_number": {
+      "type": "string",
+      "description": "Номер договора из основания документа, если указан"
+    },
+    "contract_date": { "type": "string", "format": "date", "description": "Дата договора" },
+    "currency": {
+      "type": "string",
+      "description": "Код валюты по ОКВ, например 643 для рубля; пусто, если валюта не указана"
+    },
+    "prices_include_vat": {
+      "type": "boolean",
+      "description": "true, если цены в строках указаны с НДС"
+    },
+    "items": {
+      "type": "array",
+      "description": "Строки табличной части: товары, работы, услуги",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "description": "Наименование товара, работы или услуги" },
+          "article": { "type": "string", "description": "Артикул или код товара у продавца" },
+          "is_service": {
+            "type": "boolean",
+            "description": "true для работ и услуг, false для товаров"
+          },
+          "unit": { "type": "string", "description": "Единица измерения, например шт, кг, усл" },
+          "unit_code": { "type": "string", "description": "Код единицы измерения по ОКЕИ, например 796" },
+          "quantity": { "type": "number", "description": "Количество" },
+          "price": { "type": "number", "description": "Цена за единицу" },
+          "amount_without_vat": { "type": "number", "description": "Стоимость без НДС" },
+          "vat_rate": {
+            "type": "string",
+            "enum": ["22%", "20%", "10%", "7%", "5%", "0%", "без НДС", "22/122", "20/120", "10/110"],
+            "description": "Ставка НДС строки"
+          },
+          "vat_amount": { "type": "number", "description": "Сумма НДС строки" },
+          "amount": { "type": "number", "description": "Стоимость с НДС (всего по строке)" }
+        },
+        "required": ["name", "amount"]
+      }
+    },
+    "total_without_vat": { "type": "number", "description": "Итого без НДС" },
+    "total_vat": { "type": "number", "description": "Итого НДС" },
+    "total": {
+      "type": "number",
+      "x-typizer-check": "sum_of",
+      "x-typizer-sum-of": "items[].amount",
+      "description": "Итого с НДС (всего к оплате)"
+    }
+  },
+  "required": ["document_kind", "document_number", "seller_inn", "total"]
+}

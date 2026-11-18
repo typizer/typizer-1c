@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.ДоговорыКонтрагентов" id="5f5e8065-28f9-5858-a999-ef212ecdb424" configVersion="dff839b303a64bd50bc10769438e16693595e958"/>
+		<Metadata name="Catalog.Контрагенты" id="d277ad4c-af15-5eb8-b773-77b5bf9a11f1" configVersion="ee1f5d6f33b1279ed00c4fd09914d69a8b220937"/>
+		<Metadata name="Catalog.Номенклатура" id="9823a157-5c7c-51b3-b9e0-9379f79326e9" configVersion="2cc5f5642d8766e8de9b4dec914c9dd0b32e6221"/>
+		<Metadata name="Catalog.Организации" id="02a5c05c-eea5-5531-b4b9-3acffcb90cfd" configVersion="61741329c6c999c60a86ecb4a173f76264c17a38"/>
+		<Metadata name="Catalog.Склады" id="edf4d708-fb37-5364-a12f-36840d21cc99" configVersion="a56c7546beb0c4c61703c4dcfbed0241a2115328"/>
+		<Metadata name="CommonCommand.ТипизаторНастройки" id="7f2fe4fa-bc86-5472-b7a4-6dfdb2cec11c" configVersion="4279e6948a8fee19ec12b60103c757f8caa51c26"/>
+		<Metadata name="CommonCommand.ТипизаторНастройки.CommandModule" id="7f2fe4fa-bc86-5472-b7a4-6dfdb2cec11c.2" configVersion="10357c1b4b07e065eef2982c199f8f2ba71b816b"/>
+		<Metadata name="CommonCommand.ТипизаторРаспознатьДокументы" id="fc2116a8-cd35-56a0-b163-7a120e8549a9" configVersion="7fb725f08fc211b900d4774fa6f30d8f4570bf01"/>
+		<Metadata name="CommonCommand.ТипизаторРаспознатьДокументы.CommandModule" id="fc2116a8-cd35-56a0-b163-7a120e8549a9.2" configVersion="48b257fc60cc40d3b2810307c5a78e3685756a1f"/>
+		<Metadata name="CommonCommand.ТипизаторРаспознатьИзСписка" id="18985142-4b7f-5ab9-8386-5c022f7badb7" configVersion="1d7d863ca1c3b71551deac5f5164225a91d987ca"/>
+		<Metadata name="CommonCommand.ТипизаторРаспознатьИзСписка.CommandModule" id="18985142-4b7f-5ab9-8386-5c022f7badb7.2" configVersion="839f939cfcb9c57b1e169a7c442693b216bf423f"/>
+		<Metadata name="CommonModule.ТипизаторAPI" id="911a5bd8-5c5d-407a-b53d-0cbe3aa4b3ed" configVersion="192499dab2d423e3f84df9258fb5b97a769a41eb"/>
+		<Metadata name="CommonModule.ТипизаторAPI.Module" id="911a5bd8-5c5d-407a-b53d-0cbe3aa4b3ed.0" configVersion="1c6e8409295673fc69e20ed1ef9fc883ba7c5a21"/>
+		<Metadata name="CommonModule.ТипизаторAPIКлиентСервер" id="d3037ded-30ad-4638-9a9f-6c6afdbf8081" configVersion="654db6cfa545b37719b7ef3b45e55e4b1dc23c8a"/>
+		<Metadata name="CommonModule.ТипизаторAPIКлиентСервер.Module" id="d3037ded-30ad-4638-9a9f-6c6afdbf8081.0" configVersion="5cf8ea76444a03b8f8737c7f6b25ad2861ea94fa"/>
+		<Metadata name="CommonModule.ТипизаторКлиент" id="fb79d3b1-6368-5b87-9747-7d9dc48b77ba" configVersion="74d75f48cc6bf72bfed69799a6b383756bf946c9"/>
+		<Metadata name="CommonModule.ТипизаторКлиент.Module" id="fb79d3b1-6368-5b87-9747-7d9dc48b77ba.0" configVersion="849cd5cea33915072e278aebea7c8f3055f7645b"/>
+		<Metadata name="CommonModule.ТипизаторКлиентСервер" id="0018be60-fdf0-5969-9c3f-c5f495207db7" configVersion="f005fd80a6b7f13ef00055e8fcdef6af0a3ad931"/>
+		<Metadata name="CommonModule.ТипизаторКлиентСервер.Module" id="0018be60-fdf0-5969-9c3f-c5f495207db7.0" configVersion="22b6c34eb532d1b28b0bc4988ddc0b58f40602c9"/>
+		<Metadata name="CommonModule.ТипизаторСервер" id="372b9da8-3b70-5ccc-a3b5-e554d2e3ccab" configVersion="f6a352a955decdb308855e8741ef23aa9999523d"/>
+		<Metadata name="CommonModule.ТипизаторСервер.Module" id="372b9da8-3b70-5ccc-a3b5-e554d2e3ccab.0" configVersion="8c91e8dfb776ef98e1c06ed282b4e768e2d24dec"/>
+		<Metadata name="CommonModule.ТипизаторСозданиеДокументов" id="58da9d62-9577-5dc8-b69c-194ea61cdacf" configVersion="21160d1e2f802d3a998b798e3f7e2bfd2ee5a44a"/>
+		<Metadata name="CommonModule.ТипизаторСозданиеДокументов.Module" id="58da9d62-9577-5dc8-b69c-194ea61cdacf.0" configVersion="69678fa684882a3f0a708a9120f79b1955aef7cc"/>
+		<Metadata name="CommonTemplate.ТипизаторСхемаПервичногоДокумента" id="4b8988ab-d62d-58ba-92d8-d9211c6ed887" configVersion="346122d2d9253e4d3bcc888305cd8a56eb7f2e7d"/>
+		<Metadata name="CommonTemplate.ТипизаторСхемаПервичногоДокумента.Template" id="4b8988ab-d62d-58ba-92d8-d9211c6ed887.0" configVersion="7979c0600097b76ea7ee4b27afe37f04dc9312c7"/>
+		<Metadata name="Configuration.Типизатор" id="bbb5259a-20cd-5e8b-b350-4d7cc9b688be" configVersion="521f9a11701d3d14afd0c40fd2f8bb76c19c4453"/>
+		<Metadata name="Constant.ТипизаторАдресСервиса" id="64b38713-7423-5cb1-a376-d32fb85eedf2" configVersion="168f8dfc847389fa908fe05b3da4fd13dd2c6b87"/>
+		<Metadata name="Constant.ТипизаторТочныйРежим" id="0c35d38a-0ef9-54aa-aa36-abf3a8ee999a" configVersion="95be8082d321d0d42ef6d9f78aa83fe3142749a1"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов" id="e34e7176-a830-5e11-97bd-e9ea9772e585" configVersion="bdfc16959689c3b370f0bf00482c2342b1f16ba9"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.Форма" id="ddf4f4c0-f428-5ae8-87c8-1cb5e99621e4" configVersion="f9250db2f8cea309d141d79735681bc07f3bdeeb"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.Форма.Form" id="ddf4f4c0-f428-5ae8-87c8-1cb5e99621e4.0" configVersion="cdc9d31b7716fba31b2bdd307f9b1422f7e254d9"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.ФормаНастроек" id="35514f0c-1bf0-5560-beda-209869ab66ac" configVersion="a679b98836b7765d9f9bcef195123c599b4fb3fd"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.ФормаНастроек.Form" id="35514f0c-1bf0-5560-beda-209869ab66ac.0" configVersion="d419ac3514b2807a94229a2eb0c1140604d34e59"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.ФормаСопоставления" id="8c9571fd-7372-5cee-b6eb-2ca7053665d8" configVersion="4fd630a12584fcd0523da6e9a67da1cf75fc0488"/>
+		<Metadata name="DataProcessor.ТипизаторРаспознаваниеДокументов.Form.ФормаСопоставления.Form" id="8c9571fd-7372-5cee-b6eb-2ca7053665d8.0" configVersion="94bef785c207878d8d0dc815b1fbf68c93f8ea1f"/>
+		<Metadata name="Document.ПоступлениеТоваровУслуг" id="8064543e-8af7-59f0-9e2c-72406fa6f275" configVersion="bb5617e9e825bebe9fa810e43fc427d861d82016"/>
+		<Metadata name="Document.СчетНаОплатуПоставщика" id="cedc9bc6-3333-5c2b-afc5-f5322ad5edb7" configVersion="326c2128e5325595373487632eefd25e7860ec2f"/>
+		<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры" id="325570c3-a32c-506d-baad-2e85a002b9a1" configVersion="db96597c5eeea2cac7aa7d05586eb9597e2fab98">
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Dimension.КлючСтроки" id="500c49a8-b490-573b-aa57-f1fb772020d1"/>
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Dimension.ИННПоставщика" id="889fd4a6-f6ff-5e6f-af4a-e311350944db"/>
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Attribute.НаименованиеВДокументе" id="8b3dce36-f41a-5258-82b9-adce7c27a47a"/>
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Attribute.Артикул" id="920eb6f0-42f9-5854-b030-3528b7a1238a"/>
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Attribute.ДатаИзменения" id="dc042710-bca2-56ae-8ca0-21ad8e9c4665"/>
+			<Metadata name="InformationRegister.ТипизаторСопоставлениеНоменклатуры.Resource.Номенклатура" id="e8b7ee13-7051-5bed-bc05-eda7cc994c9e"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="156f3c26-2137-5354-ae0c-e33ac76c0975" configVersion="e1c32be4f29d3a177c113cd20925e1336be0a10e"/>
+		<Metadata name="Role.ТипизаторИспользование" id="1d3aebaa-b234-53c8-ac67-3b0f42131a38" configVersion="c0588ac5221ac3f8ec6224692f962c316cd00277"/>
+		<Metadata name="Role.ТипизаторИспользование.Rights" id="1d3aebaa-b234-53c8-ac67-3b0f42131a38.0" configVersion="5a903ba5137e9536ffd8a07927341cf80e653e39"/>
+		<Metadata name="Subsystem.Покупки" id="272fd505-88c7-5b71-a64a-8da4f08f5ae0" configVersion="e75ec70e48cf0d3c94f42cd58fa4528a39df3e9f"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

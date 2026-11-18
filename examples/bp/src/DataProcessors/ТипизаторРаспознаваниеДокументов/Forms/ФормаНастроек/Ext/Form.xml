@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Typizer: настройки</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПодключение" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключение к Typizer</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияПолучитьКлюч" id="3">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ API создаётся в личном кабинете my.typizer.ru.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияПолучитьКлючКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДекорацияПолучитьКлючРасширеннаяПодсказка" id="5"/>
+				</LabelDecoration>
+				<InputField name="КлючAPI" id="6">
+					<DataPath>КлючAPI</DataPath>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="КлючAPIКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КлючAPIРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<UsualGroup name="ГруппаПроверка" id="14">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПроверкаРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<Button name="ПроверитьПодключение" id="9">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверитьПодключение</CommandName>
+							<ExtendedTooltip name="ПроверитьПодключениеРасширеннаяПодсказка" id="10"/>
+						</Button>
+						<LabelField name="РезультатПроверки" id="11">
+							<DataPath>РезультатПроверки</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="РезультатПроверкиКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="РезультатПроверкиРасширеннаяПодсказка" id="13"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияТолькоАдминистратор" id="16">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ API, адрес сервиса и точность меняет администратор 1С.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияТолькоАдминистраторКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДекорацияТолькоАдминистраторРасширеннаяПодсказка" id="18"/>
+				</LabelDecoration>
+				<InputField name="АдресСервиса" id="19">
+					<DataPath>АдресСервиса</DataPath>
+					<ContextMenu name="АдресСервисаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="АдресСервисаРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<CheckBoxField name="ТочныйРежим" id="22">
+					<DataPath>ТочныйРежим</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТочныйРежимКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ТочныйРежимРасширеннаяПодсказка" id="24"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаполнение" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение документов</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаЗаполнениеРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="Организация" id="27">
+					<DataPath>Организация</DataPath>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определять по ИНН покупателя</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="Склад" id="30">
+					<DataPath>Склад</DataPath>
+					<ContextMenu name="СкладКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ВидДокумента" id="33">
+					<DataPath>ВидДокумента</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ВидДокументаКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<CheckBoxField name="ПрикреплятьФайл" id="36">
+					<DataPath>ПрикреплятьФайл</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПрикреплятьФайлКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ПрикреплятьФайлРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+				<CheckBoxField name="СоздаватьСчетФактуру" id="39">
+					<DataPath>СоздаватьСчетФактуру</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СоздаватьСчетФактуруКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="СоздаватьСчетФактуруРасширеннаяПодсказка" id="41"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияВерсия" id="44">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение Typizer для 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияВерсияКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="ДекорацияВерсияРасширеннаяПодсказка" id="46"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ТипизаторРаспознаваниеДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КлючAPI" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ API</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючСохранен" id="3">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресСервиса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТочныйРежим" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повышенная точность (страницы списываются по повышенному тарифу)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Склад" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидДокумента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа по умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>30</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПрикреплятьФайл" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прикреплять исходный файл к документу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздаватьСчетФактуру" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрировать полученный счёт-фактуру (для УПД и счетов-фактур)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПравоАдминистрирования" id="11">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатПроверки" id="12">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьПодключение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить ключ и показать остаток страниц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьПодключение</Action>
+		</Command>
+		<Command name="ЗаписатьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>

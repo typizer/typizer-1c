@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="CommonModule.ТипизаторAPI" id="dac590d6-cb02-476a-b9c5-c182e4a21cba" configVersion="b775573b0aa53b5a9492d96c0d72c9e23c58725b"/>
+		<Metadata name="CommonModule.ТипизаторAPI.Module" id="dac590d6-cb02-476a-b9c5-c182e4a21cba.0" configVersion="2c477cf8f3ce3d567e7a6bead596b16f8bd7b0e5"/>
+		<Metadata name="CommonModule.ТипизаторAPIКлиентСервер" id="fd683beb-ed64-4add-afb2-39d3ef23abb3" configVersion="63ba2e097f4ab02e9dc626b73217b009673d74bf"/>
+		<Metadata name="CommonModule.ТипизаторAPIКлиентСервер.Module" id="fd683beb-ed64-4add-afb2-39d3ef23abb3.0" configVersion="7b69f9e936f22b6677fbeec8ebde8e9c7b6624be"/>
+		<Metadata name="Configuration.ТипизаторSDK" id="e1257ca8-2444-4cff-8311-0ac68e84e216" configVersion="1f5ad8d9b041c57db0436fe418c55b65dd6e1dfb"/>
+		<Metadata name="Language.Русский" id="d04a3677-c013-4c46-bed1-8449d638ae7f" configVersion="1a54bcafe7cd920deb673284254a0a9c840593e2"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
