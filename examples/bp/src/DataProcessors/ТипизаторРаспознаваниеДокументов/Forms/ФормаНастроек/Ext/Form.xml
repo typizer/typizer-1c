@@ -30,7 +30,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="26"/>
 			<ChildItems>
@@ -53,7 +52,6 @@
 				</InputField>
 				<UsualGroup name="ГруппаПроверка" id="14">
 					<Group>Horizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПроверкаРасширеннаяПодсказка" id="15"/>
@@ -103,7 +101,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаЗаполнениеРасширеннаяПодсказка" id="43"/>
 			<ChildItems>

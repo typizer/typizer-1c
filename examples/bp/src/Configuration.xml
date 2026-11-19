@@ -44,14 +44,14 @@
 			<ConfigurationExtensionPurpose>AddOn</ConfigurationExtensionPurpose>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>false</KeepMappingToExtendedConfigurationObjectsByIDs>
 			<NamePrefix>Типизатор</NamePrefix>
-			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_14</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ТипизаторИспользование</xr:Item>
 			</DefaultRoles>
 			<Vendor>Typizer</Vendor>
-			<Version>1.1.0</Version>
+			<Version>1.2.1</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -98,8 +98,6 @@
 			<CommonCommand>ТипизаторРаспознатьДокументы</CommonCommand>
 			<CommonCommand>ТипизаторРаспознатьИзСписка</CommonCommand>
 			<CommonCommand>ТипизаторНастройки</CommonCommand>
-			<Constant>ТипизаторАдресСервиса</Constant>
-			<Constant>ТипизаторТочныйРежим</Constant>
 			<Catalog>Организации</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>Контрагенты</Catalog>

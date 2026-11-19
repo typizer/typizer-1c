@@ -35,7 +35,6 @@
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="16">
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="17"/>
@@ -235,7 +234,6 @@
 		</Table>
 		<UsualGroup name="ГруппаПрогресс" id="80">
 			<Group>Horizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПрогрессРасширеннаяПодсказка" id="81"/>
@@ -263,7 +261,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаПодробностиРасширеннаяПодсказка" id="105"/>
 			<ChildItems>

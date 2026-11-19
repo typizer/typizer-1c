@@ -11,7 +11,6 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>Покупки</Name>
 			<Comment/>
-			<ExtendedConfigurationObject>e616bf34-f15e-5bf3-ae67-a6ccd96bd090</ExtendedConfigurationObject>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТипизаторРаспознатьДокументы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТипизаторНастройки</xr:Item>
